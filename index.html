@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reumaifab tech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Logo for browser tab -->
+  <link rel="icon" type="image/png" href="untitled.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="untitled.png" alt="Reumaifab Logo" style="height: 50px;px * 400; vertical-align:middle;">
+        REUMAIFAB
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero slider">
+    <div class="slides">
+      <div class="slide active">
+        <h1>enjoy a wide array of our unique services.</h1>
+        <p class="font">We have a wide array of services to offer you. Services that best suits your needs with an option to customize your service of choice when need be.</p>
+      </div>
+      <div class="slide">
+        <h1>Clients Profile …our “best fit”</h1>
+        <p class="font">We serve clients of all sizes. However, we are particularly well suited to work with STARTUPS / ESTABLISHED BUSINESSES, RESULTS-DRIVEN / GOAL-ORIENTED , SKEPTICAL BUT WILLING, AGGRESSIVE GOALS.</p>
+      </div>
+      <div class="slide">
+        <h1>Get more value on your investments</h1>
+        <p class="font">Most of our clients have already worked with other agencies companies who have underperformed. This creates a “healthy skepticism”.We thrive on this … as long as it hasn’t killed your faith completely. </p>
+      </div>
+      <div class="slide">
+        <h1>OUR STEP-UP PROGRAM</h1>
+        <p class="font">“Let’s start small. See some results. Once we see that this is working and we’ve made some money, we can look at stepping up to a bigger budget down the road”. -Nearly Every Client We’ve Ever Worked With We get it, and most of our clients started “smaller”. Get in touch with us today.</p>
+      </div>
+      <div class="slide">
+        <h1>Social Media Marketing &amp; Management Services</h1>
+        <p class="font">No business is alike, which is why we offer custom social media management services. Whether you’re looking to market your business on one social media network, our team of the best social media marketing experts can build a plan tailored to your company. Give us a call or get in touch with us to learn more about our social media services, from what they include to what they cost.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-diagonal d-flex flex-wrap align-items-stretch position-relative">
+        <!-- Left Side: About Us Text -->
+        <div class="about-text col-12 col-md-6 p-4 d-flex flex-column justify-content-center" style="z-index:2;">
+          <h2>About Us</h2>
+          <p class="about-text-content">
+            REUMAIFAB TECH & Marketing Services Limited is a Zambian-based technology and marketing private company established in the year 2019, in the early stages of our operations, we have acquired a lot of experience through the different types of projects worked on.<br><br>
+            We believe in the quick delivery of the best results as expected by the client because our workflow is streamlined for efficiency and that way, our clients’ requirements are better met.
+            Research is what we do and stretch on various ideas to test product suitability before producing and developing them into actual work. Be rest assured, when the going gets tough, we have a network of reliable, experienced associates who are always ready to assist.<br><br>
+            We operate as a conglomerate as the demand for tech products continues to increase, we have covered all sectors of tech, media, and digital marketing through our different platforms such as the best online business directory Reumaifabbd.com Shop Africa an online trading platform having Chrisma eMarketers as the marketing body for all the marketing and branding needs.
+          </p>
+        </div>
+
+        <!-- Right Side: Flip Image -->
+        <div class="about-images col-12 col-md-6 d-flex align-items-center justify-content-center position-relative" style="z-index:2;">
+           <div class="flip-image-container">
+            <div class="flip-image-inner" id="aboutFlipImage">
+              <div class="flip-image-front">
+                <img src="A.jpg" alt="About Us 1" class="img-fluid rounded shadow">
+              </div>
+              <div class="flip-image-back">
+                <img src="3.jpg" alt="About Us 2" class="img-fluid rounded shadow">
+              </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>Getting or finding a service that suits your needs is hard and not fun at all, but with our easy to understand service outline, you find what you need in no time.</p>
+      <div class="service-list">
+        <div class="service-card" onclick="toggleDetails(this)">
+          <h3>DATABASE DEVELOPMENT & MANAGEMENT</h3>
+          <p>Get World-Class</p>
+          <button type="button" class="btn btn-danger">Learn more</button>
+          <div class="details">Develop and maintain professional effective database for small to large business entities. We provide our clients with both fully online and offline managed database with a fully managed and dedicated SQL Server environment, capable of running multiple databases.</div>
+        </div>
+        <div class="service-card" onclick="toggleDetails(this)">
+          <h3>IT MANAGEMENT</h3>
+          <p>Professional Databases </p>
+           <button type="button" class="btn btn-danger" id="btt">Learn more</button>
+          <div class="details">IT Management Services allows clients to focus on running their core business more effectively, rather than dealing with their IT infrastructure. Running a company’s IT infrastructure can be stressful, so this is where we come in. By making it a top priority to streamline our client's IT operations. </div>
+        </div>
+        <div class="service-card" onclick="toggleDetails(this)">
+          <h3>ONLINE DATA BACKUP & STORAGE </h3>
+          <p>Guaranteed security & protection</p>
+          <button type="button" class="btn btn-danger">Learn more</button>
+          <div class="details">Affordable and secure cloud solutions for small to medium businesses and individuals. With the best cloud data backup at affordable rates. Backup & archive data in a safe smart and secure way. </div>
+        </div>
+        <div class="service-card" onclick="toggleDetails(this)">
+          <h3>SOFTWARE, APP & WEB DEVELOPMENT</h3>
+          <p>The Best Developers</p>
+          <button type="button" class="btn btn-danger">Learn more</button>
+          <div class="details">Our best and trusted design team will create the best looking and  
+most effective interactive Website, Mobile Apps, and Software possible – for your situation or desire.</div>
+        </div>
+        <div class="service-card" onclick="toggleDetails(this)">
+          <h3>DIGITAL MARKETING</h3>
+          <p>Guaranteed Results </p>
+           <button type="button" class="btn btn-danger">Learn more</button>
+          <div class="details">Simply stated, we get results.  Whether you are looking for more website traffic, more leads, more sales, more social followers, higher engagement rates, higher email open rates … whatever your needs – we get it done.  Guaranteed. </div>
+        </div>
+        <div class="service-card" onclick="toggleDetails(this)">
+          <h3>DIGITAL-STRATEGY</h3>
+          <p>World-Class  </p>
+            <button type="button" class="btn btn-danger">Learn more</button>
+          <div class="details">We help you develop a winning strategy that maximizes your effectiveness while minimizing the time and money required to achieve your goals, and the best guide to tracking your progress.</div>
+        </div>
+        <div class="service-card" onclick="toggleDetails(this)">
+          <h3>IT CONSULTANCY & TRAINING</h3>
+          <button type="button" class="btn btn-danger">Learn more</button>
+          <div class="details">Helping our clients understand their technical needs and focus on integrating information technology into businesses and showing them how to use IT more efficiently to help reach objectives and targets. It does not just end here we go a step further with Web Development short Intensive training helping you become an expert in no time.</div>
+        </div>
+        <div class="service-card" onclick="toggleDetails(this)">
+            <h3>SEO EXPERTS</h3>
+            <button type="button" class="btn btn-danger">Learn more</button>
+          <div class="details">Be visible everywhere, let every one of your prospects find you with ease anywhere they might be. Ranking at the top of GOOGLE requires skill and Persistence and we have all the much-needed expertise.</div>
+        </div>
+        <div class="service-card" onclick="toggleDetails(this)">
+          <h3>Social Media Marketing & Management </h3>
+          <p>Guaranteed security & protection</p>
+          <button type="button" class="btn btn-danger">Learn more</button>
+          <div class="details">Affordable and secure cloud solutions for small to medium businesses and individuals. With the best cloud data backup at affordable rates. Backup & archive data in a safe smart and secure way. </div>
+        </div>
+      </div>
+    </div>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#dc3545" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 1 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+              </span>
+              Plot No. 13, Nchenja Road, Off Great East road, Northmead Lusaka
+            </li>
+            <li class="mb-3">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0d6efd" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.383V5.383zm-.034 7.434-5.396-3.24L8 10.583l-.57-.343-5.396 3.24A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.183zM1 11.383l4.708-3.175L1 5.383v6z"/>
+                </svg>
+              </span>
+              <a href="mailto:reumaifab@gmail.com">reumaifab@gmail.com</a>
+            </li>
+            <li class="mb-3">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#198754" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 1 1.015-.063l2.29 2.29c.329.329.445.81.302 1.234l-.547 1.64a.678.678 0 0 1-.588.465c-.26.03-.516.07-.768.12a11.72 11.72 0 0 0 5.292 5.292c.05-.252.09-.508.12-.768a.678.678 0 0 1 .465-.588l1.64-.547c.424-.143.905-.027 1.234.302l2.29 2.29a.678.678 0 0 1-.063 1.015l-2.013 1.61c-.329.263-.8.263-1.13 0C4.978 13.484 2.516 8.484 3.654 1.328z"/>
+                </svg>
+              </span>
+              <a href="tel:+260971228773">+260 971 228 773</a>
+            </li>
+            <li class="mb-3">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#198754" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 1 1.015-.063l2.29 2.29c.329.329.445.81.302 1.234l-.547 1.64a.678.678 0 0 1-.588.465c-.26.03-.516.07-.768.12a11.72 11.72 0 0 0 5.292 5.292c.05-.252.09-.508.12-.768a.678.678 0 0 1 .465-.588l1.64-.547c.424-.143.905-.027 1.234.302l2.29 2.29a.678.678 0 0 1-.063 1.015l-2.013 1.61c-.329.263-.8.263-1.13 0C4.978 13.484 2.516 8.484 3.654 1.328z"/>
+                </svg>
+              </span>
+              <a href="tel:+260974049247">+260 974 049 247</a>
+            </li>
+            <li>
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#1877f3" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M8.94 8.5H10.5V16H7V8.5H5.5V6.5H7V5.5C7 3.57 8.57 2 10.5 2H12.5V4H10.5C10.22 4 10 4.22 10 4.5V6.5H12.5L12 8.5H10V16H8.94V8.5Z"/>
+                </svg>
+              </span>
+              <a href="https://facebook.com/" target="_blank" rel="noopener">Visit our Facebook page</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Your Name" required />
+            <input type="email" class="form-control mb-3" placeholder="Your Email" required />
+            <textarea class="form-control mb-3" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-danger">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer">&copy; 2025 Reumaifab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
