@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reumaifab tech</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
   <!-- Logo for browser tab -->
-  <link rel="icon" type="image/png" href="Untitled.png">
+  <link rel="icon" type="image/png" href="untitled.png">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="navbar">
     <div class="container">
       <div class="logo">
-        <img src="Untitled.png" alt="Reumaifab Logo" style="height: 40px; width: 40px; vertical-align:middle;">
+        <img src="untitled.png" alt="Reumaifab Logo" style="height: 50px;px * 400; vertical-align:middle;">
         REUMAIFAB
       </div>
       <nav>
@@ -69,16 +70,28 @@
 
         <!-- Right Side: Flip Image -->
         <div class="about-images col-12 col-md-6 d-flex align-items-center justify-content-center position-relative" style="z-index:2;">
-           <div class="flip-image-container">
-            <div class="flip-image-inner" id="aboutFlipImage">
-              <div class="flip-image-front">
-                <img src="A.jpg" alt="About Us 1" class="img-fluid rounded shadow">
+          <div class="flip-image-container" style="perspective: 1000px; width: 320px; height: 320px;">
+            <div class="flip-image-inner" id="aboutFlipImage" style="position: relative; width: 100%; height: 100%; transition: transform 0.8s cubic-bezier(.4,2,.6,1); transform-style: preserve-3d; cursor: pointer;">
+              <div class="flip-image-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden;">
+                <img src="A.jpg" alt="About Us 1" class="img-fluid rounded shadow" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
               </div>
-              <div class="flip-image-back">
-                <img src="Untitled.png" alt="About Us 2" class="img-fluid rounded shadow">
+              <div class="flip-image-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg);">
+                <img src="3.jpg" alt="About Us 2" class="img-fluid rounded shadow" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
               </div>
-
-              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+        <script>
+          // Flip on click
+          document.addEventListener('DOMContentLoaded', function() {
+            const flip = document.getElementById('aboutFlipImage');
+            flip.addEventListener('click', function() {
+              flip.style.transform = flip.style.transform === 'rotateY(180deg)' ? '' : 'rotateY(180deg)';
+            });
+          });
+        </script>
 
             </div>
           </div>
